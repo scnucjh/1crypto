@@ -1,4 +1,7 @@
 import numpy
+from crypto_tool import *
+import math
+
 
 def get_lat(S):
     n = len(S)
@@ -7,8 +10,9 @@ def get_lat(S):
         for outputmask in range(n):
             lat[inputmask][outputmask] = - n//2
             for i in range(n):
-                if ( one_count(i) + one_count(S[i]) ) % 2 == 0:
+                if ( one_count(i&inputmask) + one_count(S[i]&outputmask) ) % 2 == 0:
                     lat[inputmask][outputmask] += 1
+    return lat
 
 def maxv_in_lat(Sbox):
     lat = get_lat(Sbox)

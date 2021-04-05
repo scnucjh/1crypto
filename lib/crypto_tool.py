@@ -17,6 +17,10 @@ def int2b(a,len):
     return res
 
 
-
+def zeros(n,m):
+    res = []
+    for i in range(n):
+        res.append([0]*m)
+    return res
 
 

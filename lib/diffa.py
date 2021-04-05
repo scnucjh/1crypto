@@ -1,4 +1,5 @@
 import numpy
+from crypto_tool import *
 
 def get_ddt(S):
     n = len(S)
@@ -17,3 +18,4 @@ def maxv_in_ddt(Sbox):
         for j in range(1,n):
             res = max(res, ddt[i][j])
     return res
+
