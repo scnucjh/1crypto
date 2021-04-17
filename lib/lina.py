@@ -24,3 +24,5 @@ def maxv_in_lat(Sbox):
     return res
 
 
+def Lin(Sbox):
+    return 2 * maxv_in_lat(Sbox)

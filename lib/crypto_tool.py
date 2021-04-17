@@ -16,11 +16,17 @@ def int2b(a,len):
         a//=2
     return res
 
+def b2int(a):
+    res = 0
+    for i in range(len(a)):
+        if a[i]==1:
+            res += 2**i
+    return res
+
 
 def zeros(n,m):
     res = []
     for i in range(n):
         res.append([0]*m)
     return res
-
 

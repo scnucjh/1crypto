@@ -7,7 +7,7 @@ def show_sbox_propety(sboxname, S:list):
     print('|')
     
 
-show_sbox_propety('Skinny4', crypta.sbox.Skinny4)
-show_sbox_propety('Piccolo', crypta.sbox.Piccolo)
+show_sbox_propety('AES      ', crypta.sbox.AES)
+show_sbox_propety('Skinny8  ', crypta.sbox.Skinny8)
 
     

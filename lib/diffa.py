@@ -19,3 +19,9 @@ def maxv_in_ddt(Sbox):
             res = max(res, ddt[i][j])
     return res
 
+def Diff(Sbox):
+    '''
+    Diff(S) := Differential uniformity
+    '''
+    return maxv_in_ddt(Sbox)
+
